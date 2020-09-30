@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0; /*mata el margen y pading de las etiquetas por defectp*/
+}
+
+body{
+    background-color: #e6e6e6;
+}
+
+header, main, footer{
+    width: 90%;
+    margin: 20px auto; /*margen se ajusta auto*/
+}
+
+header nav{
+    background-color: rgb(102, 137, 241);
+    overflow: hidden; /*esto hace que el texto se acomode y que la etiqueta papa le de la misma posicion a los hijos. probar quitar esto para ver como se ve*/
+    /*width: fit-content; esto pa que se ajuste al largo del texto*/
+}
+
+header nav ul{
+    list-style: none; /*quito los puntitos al nav*/
+}
+
+header nav ul li{ /*hacer que el nav este todo horizontal*/
+    float: left;
+}
+
+header nav ul li a { /*signica que estoy entrando a la etiqueta a*/
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{/*cuando el cursor pase por ahi*/
+    background-color: #75acec;
+}
+
+section{ /*meter el sidebar a la derecha*/
+    width: 69%;
+    float: left;
+    margin-right: 1%; /*para que se separe el sidebar*/
+}
+
+aside{
+    width: 30%; /*cmo lo de arriba es 69+1 de margen este es 30 asi da en la suma 100%*/
+    background-color: #ff8800;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box; /*para que respete la ubicacion que habia antes del paddin que ponerlo hizo que se salga todo*/
+}
+
+aside h3{ 
+    text-align: center;
+}
+
+article{ /*acomodar espacio en el article*/
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px; /*añade margen entre cada article para abajo*/
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    clear: both; /*esto limpia las propiedades de float left y queda el footer abajo*/
+    padding: 10px 0; /*para hacerlo mas grueso*/
+    text-align: center;
+}
+
+figure{
+    padding: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+/* .fondo1{
+    background-image: url("../img/perrito-1.jpg"); /*los dos puntos es par avolver una carpeta atras*/
+    background-size: auto; /*automatica*/
+    background-size: contain; /*rellena todo*/
+    background-repeat: no-repeat; /*que no se repita*/
+    background-position: center; /*laposicion de la img*/
+}  */
